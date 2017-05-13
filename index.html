@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Packing List</title>
+	<link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" media="screen" type="text/css">
+</head>
+<body>
+
+	<header>
+		<h1>Packing List</h1>
+	</header>
+
+	<form id="packingForm">
+		<input type="text" id="newItemDescription" placeholder="What do you need to pack?">
+		<button type="submit" class="btn">Add Item</button>
+	</form>
+	<ul id="packingList"></ul>
+	<div id="itemSummary">
+		<p id="tickNotice" class="tickNotice">Tick an item to mark it as packed.</p>
+		<p>You have <span>0 items</span> left to pack.</p>
+		<button id="deleteItems" class="btn delete">Delete All Items</button>
+		<button id="clearPacked" class="btn">Clear Packed Items</button>			
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
